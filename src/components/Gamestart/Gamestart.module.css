@@ -1,0 +1,163 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.title {
+    width: 1280px;
+    height: 151px;
+    position: absolute;
+    top: 64px;
+    left:80px;
+    gap: 593px;
+    
+    display: flex;
+}
+.score {
+    height: 151px;
+    width: 135px;
+    gap: 3px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.score .number {
+    font-weight:500;
+    font-size:100px;
+    width: 62px;
+    height: 112px;
+    
+}
+.score .text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+}
+.choice {
+    height: 138px;
+    width: 552px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.choice .para {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    height: 55px;
+    align-items:flex-end;
+}
+.nums {
+    width: 552px;
+    height: 72px;
+    display: flex;
+    
+    gap:24px;
+}
+.val {
+    background-color: white;
+    height: 72px;
+    width: 72px;
+    color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    border-radius: 2px;
+    transition: all linear 150ms;
+    box-shadow: 2px 2px 1px orangered;
+}
+.val:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.val:active {
+    opacity: 50%;
+}
+.hero {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+   
+}
+.dice img{
+    height: 250px;
+    width: 250px;
+}
+.rules {
+    height: 105px;
+    width: 100%;
+   
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    width: 220px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    transition: all linear 150ms;
+    box-shadow: 2px 2px 1px orangered;
+}
+.btn:hover {
+    background-color: wheat;
+    color: rgb(255, 64, 0);
+    cursor: pointer;
+}
+.btn:active {
+    opacity: 70%;
+}
+.white {
+    background-color: white;
+    color: black;
+}
+
+
+.showrules {
+    position: absolute;
+    width: 55vw;
+    height: 170px;
+   
+    top: 430px;
+    left: 50%;
+    transform: translate(-40%);
+    
+    
+}
+.p {
+    height: 90%;
+    width: 95%;
+    background-color: wheat;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 1px orangered;
+    
+}
+.p h3{
+    margin-bottom: 15px;
+}
