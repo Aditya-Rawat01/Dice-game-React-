@@ -1,8 +1,14 @@
 import { useState } from 'react'
 import React from 'react'
 import styles from './Gamestart.module.css'
+import img1 from '../../public/dice1.png'
+import img2 from '../../public/dice2.png'
+import img3 from '../../public/dice3.png'
+import img4 from '../../public/dice4.png'
+import img5 from '../../public/dice5.png'
+import img6 from '../../public/dice6.png'
 export function Gamestart() {
-    const [Image,setImage]=useState('../../../dice1.png')
+    const [Image,setImage]=useState(img1)
     const [Num,setNum]=useState()
     const [Score,setScore]=useState(0)
     const [Showrules,setShowrules]=useState(false)
@@ -11,12 +17,12 @@ export function Gamestart() {
             alert("Select a number first")
             return;
         }
-        const arr=['../../../dice1.png',
-            '../../../dice2.png',
-            '../../../dice3.png',
-            '../../../dice4.png',
-            '../../../dice5.png',
-            '../../../dice6.png']
+        const arr=[img1 ,
+            img2,
+            img3,
+            img4,
+            img5,
+            img6]
       const mathrand=Math.floor((Math.random()*6))
       if (Num==mathrand+1) {
         setScore((prev)=>prev+Num)
